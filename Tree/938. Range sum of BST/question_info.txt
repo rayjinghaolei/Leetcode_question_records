@@ -1,0 +1,5 @@
+Question link: https://leetcode.com/problems/range-sum-of-bst/
+Question:
+    This questions asks to sum up all the tree node values that in a specfic range
+How to solve:
+    traverse the tree and check if the node value are in the range

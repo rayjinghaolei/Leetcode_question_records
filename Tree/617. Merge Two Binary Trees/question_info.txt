@@ -1,0 +1,19 @@
+Question link: https://leetcode.com/problems/merge-two-binary-trees/
+Question:
+    This questions asks to add two binary trees to a new one
+    for a position
+        1. if they both have values, add them
+        2. if one of them don't have value, use the other one
+How to solve:
+    traverse all the nodes and add them up
+    the solution looks very beautiful
+    the logic is:
+        merge(node1, node2):
+            if node1 empty:
+                return node2
+            if node2 empty:
+                return node1
+            result = Node(node1.val + node2.val)
+            result.left = self.merge(node1.left,node2.left)
+            result.right = self.merge(node2.right,node2.right)
+            return result        
