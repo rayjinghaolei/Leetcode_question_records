@@ -1,0 +1,10 @@
+Question link: https://leetcode.com/problems/increasing-order-search-tree/
+Question:
+    This questions asks to rearrange the binary search tree to a tree with only right child.
+    The resulting right tree is garenteed that parent is always less than the child
+How to solve:
+    Do an left-node-right traversal (inorder) so that we can access the nodes in a increasing fashion
+    when accessing the first node, declear a new variable self.result
+    have a pointer pointing to that node
+    copy the nodes from the original tree to the new pointer
+    return self.result
