@@ -1,0 +1,11 @@
+Question link: https://leetcode.com/problems/n-ary-tree-postorder-traversal/
+Question:
+    This questions asks to traverse the tree recursively and iteratively in postorder
+    
+How to solve:
+    put the root in a stack
+    while stack not empty
+        pop from the stack
+        get the value and push into output
+        send the children into the stack
+    return the reverse ordered output
