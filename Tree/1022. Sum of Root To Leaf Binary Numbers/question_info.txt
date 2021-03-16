@@ -1,0 +1,8 @@
+Question link: https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/
+Question:
+    This questions sets up the binary tree as a tree of 1 and 0 and sum up all the paths as a binary numbers
+How to solve:
+    dfs the tree
+    accumulate node values into a string
+    when the pointer reached the end of the path, turn the string into number and add it up
+    return the final value
