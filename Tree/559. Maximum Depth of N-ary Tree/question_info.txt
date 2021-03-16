@@ -1,0 +1,9 @@
+Question link: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
+Question:
+    This questions asks to find out the max depth of a tree
+How to solve:
+    dfs the tree
+    accumulate the depth into a variable
+    when the pointer reached the end of the path, compare with the current max depth and update
+    call dfs for every child node
+    return the final value
