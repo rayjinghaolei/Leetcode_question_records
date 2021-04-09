@@ -1,0 +1,5 @@
+Question link: https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/
+Question:
+    This questions asks to find a node in a tree if it has the value of target and return the corresponding node in cloned tree
+How to solve:
+    dfs the cloned tree

@@ -1,0 +1,12 @@
+Question link: https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/
+Question:
+    This questions asks to get the sum of values of nodes which their grandparent's value is even
+How to solve:
+    dfs the tree
+    check the grandparent and see if it has even value
+
+    the key is to set up a dfs function with node, parent and grandparent as parameters
+    when doing the recursive call you call dfs(node.left, node, parent)
+    and you start by calling dfs(root, None, None)
+
+    note that the key word nonlocal is used when you want to modify the variable ourside the function.
